@@ -1,8 +1,15 @@
 Group Project
-\nTeam Members: 
+
+Members: 
+
 Omar
-Asif
-Hala 
-Ishan 
-Anukulan
+
 Mara
+
+Asif
+
+Anukulan
+
+Hala
+
+Ishan 
