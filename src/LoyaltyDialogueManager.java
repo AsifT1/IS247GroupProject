@@ -9,11 +9,11 @@ public class LoyaltyDialogueManager extends DialogueManager {
         String answer = scanner.nextLine();
 
         if (answer.equalsIgnoreCase("yes")) {
+            System.out.println("Alright! We'll create your account!");
             System.out.print("Please enter your first name: ");
             String name = scanner.next();
 
-            String initials = name.substring(name.length() - 1);
-            String upper = initials.toUpperCase();
+            String initials = name.substring(name.length() - 1).toUpperCase();
 
             System.out.print("Please enter your last name: ");
             String last = scanner.next();
@@ -21,24 +21,19 @@ public class LoyaltyDialogueManager extends DialogueManager {
             Random rand = new Random();
             int randomNumber = rand.nextInt(10, 100);  // 10 to 99 inclusive
 
-            String pass = last.length() >= 3 ? last.substring(0, 3) + randomNumber : last + randomNumber;
-            String lower = pass.toLowerCase();
+            String pass = (last.length() >= 3 ? last.substring(0, 3) : last) + randomNumber;
+            String complete = initials + pass.toLowerCase();
 
-            String complete = upper + lower;
+
+            LoyaltyAccount<String> account = new LoyaltyAccount<>(complete);
+            account.addPoints(5);
+
             System.out.println("Your generated password is: " + complete);
+            System.out.println("You've earned 5 loyalty points! Current points: " + account.getPoints());
 
-            String stars = "****";
-            String everything = stars.concat(complete);
-            System.out.println("Your password with stars: " + everything);
-
-            String reverse = new StringBuilder(everything).reverse().toString();
-            System.out.println("Your password reversed: " + reverse);
-
-            // Then print the original message:
+            // Original message
             System.out.println(message);
-
         } else {
-            // Just print the message if user says No
             System.out.println(message);
         }
     }
