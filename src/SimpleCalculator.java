@@ -1,3 +1,4 @@
+//Step 1: Create a Java file
 public class SimpleCalculator {
     public static void main(String[] args) {
         int a = 10;
