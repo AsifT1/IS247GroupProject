@@ -1,7 +1,17 @@
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Extends {@link DialogueManager} to handle loyalty program interactions with users.
+ */
 public class LoyaltyDialogueManager extends DialogueManager {
+
+    /**
+     * Prompts the user to join the loyalty program and generates a password if they agree.
+     * Prints the original message afterward.
+     *
+     * Overrides the {@code printMessage()} method from {@link DialogueManager}.
+     */
     @Override
     public void printMessage() {
         Scanner scanner = new Scanner(System.in);

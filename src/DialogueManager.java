@@ -1,6 +1,15 @@
+/**
+ * Manages dialogue messages based on product categories.
+ */
 public class DialogueManager {
+
     protected String message;
 
+    /**
+     * Sets the message according to the given product category.
+     *
+     * @param category the product category to determine the message for
+     */
     public void setMessage(String category) {
         switch (category.toLowerCase()) {
             case "coffee":
@@ -23,6 +32,9 @@ public class DialogueManager {
         }
     }
 
+    /**
+     * Prints the currently set message to the console.
+     */
     public void printMessage() {
         System.out.println(message);
     }
