@@ -1,4 +1,4 @@
-//Step 1: Create a Java file
+//Group Task 2
 /**
  * A simple calculator program that demonstrates basic arithmetic operations.
  * Uses external utility classes for addition, subtraction, and multiplication.
