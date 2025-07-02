@@ -15,7 +15,7 @@ Hala - Business Analyst (hmalik590)
 Ishan - System Admin (brownlantern01)
 
 Project Description:
-Our project is a Coffee Shop Ordering System Program where customers can choose food and drinks from a menu.Customers earn one point for every dollar spent, and points can be redeemed for discounts if enough have been accumulated. This program automates the ordering process while allowing customers to use their rewards, helping employees fulfill orders more quickly and reducing wait times.
+Our project is a Coffee Shop Ordering System Program where customers can choose food and drinks from a menu. Customers earn one point for every dollar spent, and points can be redeemed for discounts if enough have been accumulated. This program automates the ordering process while allowing customers to use their rewards, helping employees fulfill orders more quickly and reducing wait times.
 
 Use of Docker: 
 In this project we implemented a docker-file which makes it so that in runs the same way everywhere, such as different team-members devices and it contains all the libraries, and settings on intelliJ. The Docker setup uses a Dockerfile script separate from the Java code which specifies the base image (openjdk:23), copies the compiled Java classes into the container, sets the working directory, and runs the Java program using the command java Main; the Java code itself simply prints messages to demonstrate the app running inside the Docker container. 
